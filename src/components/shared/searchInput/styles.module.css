@@ -1,0 +1,39 @@
+.inputUnF {
+  background-color: #fff;
+  border: none;
+  height: 46px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(72, 52, 147, 0.08);
+  width: 100%;
+  padding-right: 40px;
+  transition: all .5s ease;
+  /* margin-bottom: 20px; */
+}
+
+.inputF {
+  background-color: #fff;
+  border: none;
+  height: 46px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(72, 52, 147, 0.08);
+  width: 100%;
+  padding-right: 20px;
+  transition: all .5s ease;
+}
+
+.inputUnF::placeholder {
+  margin-right: 20px;
+  font-family: iransans;
+  font-size: 14px;
+}
+
+.inputF::placeholder {
+  font-family: iransans;
+  font-size: 14px;
+}
+.inputF:focus {
+  outline: none;
+}
+.inputUnF:focus {
+  outline: none;
+}

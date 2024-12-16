@@ -1,0 +1,59 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "unused-imports"
+  ],
+  "rules": {
+    "indent": [
+      "off",
+      "tab"
+    ],
+    "linebreak-style": 0,
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-undef": 0,
+    "no-unused-vars": 2,
+    "no-var": 2,
+    "eol-last": 2,
+    "no-control-regex": 1,
+    "no-useless-escape": 0,
+    "unused-imports/no-unused-imports": 2,
+    //React
+    "react/jsx-boolean-value": 2,
+    "react/jsx-key": 2,
+    "react/prop-types": 0,
+    "react/no-unescaped-entities": 0,
+    "react/display-name": 1,
+    "no-debugger": 2,
+    "no-use-before-define": 2,
+    "react/no-unknown-property": 0,
+    "no-unknown-property": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

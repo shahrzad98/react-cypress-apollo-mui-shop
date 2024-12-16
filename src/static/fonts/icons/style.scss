@@ -1,0 +1,186 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7wyu2z');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7wyu2z#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?7wyu2z') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?7wyu2z') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?7wyu2z##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="df-"], [class*=" df-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.df-orders {
+  &:before {
+    content: $df-orders;
+  }
+}
+
+.df-arrow {
+  &:before {
+    content: $df-arrow;
+  }
+}
+
+.df-card-to-card {
+  &:before {
+    content: $df-card-to-card;
+  }
+}
+
+.df-circle {
+  &:before {
+    content: $df-circle;
+  }
+}
+
+.df-close {
+  &:before {
+    content: $df-close;
+  }
+}
+
+.df-closed-order {
+  &:before {
+    content: $df-closed-order;
+  }
+}
+
+.df-customer-desc {
+  &:before {
+    content: $df-customer-desc;
+  }
+}
+
+.df-edit {
+  &:before {
+    content: $df-edit;
+  }
+}
+
+.df-error {
+  &:before {
+    content: $df-error;
+  }
+}
+
+.df-factor {
+  &:before {
+    content: $df-factor;
+  }
+}
+
+.df-filter {
+  &:before {
+    content: $df-filter;
+  }
+}
+
+.df-home {
+  &:before {
+    content: $df-home;
+  }
+}
+
+.df-Inprogress-order {
+  &:before {
+    content: $df-Inprogress-order;
+  }
+}
+
+.df-notfound {
+  &:before {
+    content: $df-notfound;
+  }
+}
+
+.df-order-checked {
+  &:before {
+    content: $df-order-checked;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.df-order-notif {
+  &:before {
+    content: $df-order-notif;
+  }
+}
+
+.df-order-search {
+  &:before {
+    content: $df-order-search;
+  }
+}
+
+.df-order-time {
+  &:before {
+    content: $df-order-time;
+  }
+}
+
+.df-all-orders {
+  &:before {
+    content: $df-all-orders;
+  }
+}
+
+.df-payment-card {
+  &:before {
+    content: $df-payment-card;
+  }
+}
+
+.df-product {
+  &:before {
+    content: $df-product;
+  }
+}
+
+.df-search {
+  &:before {
+    content: $df-search;
+  }
+}
+
+.df-store {
+  &:before {
+    content: $df-store;
+  }
+}
+
+.df-time {
+  &:before {
+    content: $df-time;
+  }
+}
+
+.df-user {
+  &:before {
+    content: $df-user;
+  }
+}
+
+.df-waiting-order {
+  &:before {
+    content: $df-waiting-order;
+  }
+}
+

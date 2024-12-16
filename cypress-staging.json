@@ -1,0 +1,6 @@
+{
+    "watchForFileChanges": true,
+    "baseUrl": "https://lite.apps.digify.shop",
+    "viewportHeight": 896,
+    "viewportWidth": 414
+}

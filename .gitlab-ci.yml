@@ -1,0 +1,26 @@
+stages:
+  - master
+  - staging
+master:
+  stage: master
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker pull $CI_REGISTRY_IMAGE/master:latest || true
+    - docker build --cache-from $CI_REGISTRY_IMAGE/master:latest --tag $CI_REGISTRY_IMAGE/master:$CI_COMMIT_SHA --build-arg REACT_APP_STAGING=false --tag $CI_REGISTRY_IMAGE/master:latest .
+    - docker push $CI_REGISTRY_IMAGE/master
+
+  only:
+    - master
+  tags:
+    - shell
+staging:
+  stage: staging
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker pull $CI_REGISTRY_IMAGE/staging:latest || true
+    - docker build --build-arg REACT_APP_BASE_API_URL=https://backend.apps.digify.shop/ --build-arg REACT_APP_STAGING=true --cache-from $CI_REGISTRY_IMAGE/staging:latest --tag $CI_REGISTRY_IMAGE/staging:$CI_COMMIT_SHA --tag $CI_REGISTRY_IMAGE/staging:latest .
+    - docker push $CI_REGISTRY_IMAGE/staging
+  only:
+    - staging
+  tags:
+    - shell

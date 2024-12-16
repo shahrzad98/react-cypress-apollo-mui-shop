@@ -1,0 +1,42 @@
+*::-webkit-scrollbar {
+  display: none;
+}
+.Toastify__toast-container {
+  bottom: 85px;
+}
+.Toastify__toast {
+  width: 90%;
+  margin: auto;
+  direction: ltr;
+  background-color: #d9f9ea;
+  box-shadow: 0px 4px 8px rgba(72, 52, 147, 0.08);
+  border-radius: 8px;
+  color: #00d96f;
+  font-family: iransans;
+}
+.Toastify__toast-body {
+  direction: rtl;
+}
+
+body {
+  position: relative;
+}
+#crisp-chatbox{
+  display: none !important;
+
+}
+.MuiFormHelperText-root {
+  direction: rtl !important;
+}
+.Raychat_App {
+  display: none !important;
+}
+.raychat_main_button {
+  display: none !important;
+}
+.leaflet-control-container + div {
+  z-index: 500 !important;
+}
+.leaflet-control-container {
+  display: none;
+}
