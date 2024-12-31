@@ -1,8 +1,5 @@
 {
   "name": "internal-panel-admin",
-  "author": {
-    "name": "Digify Merchant Team"
-  },
   "version": "1.0.0",
   "main": "src/components/App.js",
   "private": "true",
