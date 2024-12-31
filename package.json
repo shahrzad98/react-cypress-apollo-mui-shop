@@ -1,5 +1,4 @@
 {
-  "name": "internal-panel-admin",
   "version": "1.0.0",
   "main": "src/components/App.js",
   "private": "true",
